@@ -1,0 +1,35 @@
+Sketchfab Easy Download - Third-party notices
+
+Embedded conversion core and WASM payload:
+Source: https://github.com/Corpocore/sfrip
+Commit: 2bb0b7594aeea9f979af035eccb8c6ad29586633
+Upstream license: MIT (vendor/sfrip/LICENSE)
+Upstream credits: https://github.com/seryi882/sketchfab-downloader-extension
+
+Adaptation: build.mjs injects a scoped fetch adapter into sf-api.js so anonymous
+Tampermonkey requests can be used without a local helper. The embedded WASM
+bytes and original source are retained. Geometry-only export omits textures,
+animations and wireframe payloads. The separately written print exporters apply
+scene transforms, support optional user-chosen scale, and convert to Z-up.
+
+MIT License
+
+Copyright (c) 2026 sfrip contributors
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.

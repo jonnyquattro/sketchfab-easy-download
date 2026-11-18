@@ -1,0 +1,13 @@
+{
+  "name": "sketchfab-easy-download",
+  "version": "2.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Self-contained experimental Tampermonkey exporter for authorized Sketchfab reference models",
+  "license": "MIT",
+  "scripts": {
+    "build": "node build.mjs",
+    "test": "node --test test/*.test.js"
+  },
+  "devDependencies": { "esbuild": "0.28.2" }
+}
